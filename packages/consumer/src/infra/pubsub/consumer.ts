@@ -33,7 +33,7 @@ export default class Consumer {
     const subscription = pubSubClient.subscription('PocSubscription');
 
     const messageHandler = async (messageData: IMessage): Promise<void> => {
-      const message: string = JSON.parse(String(messageData.data));
+      const { message } = JSON.parse(String(messageData.data));
       const { operation } = messageData.attributes;
 
       console.log(`operation => ${operation}`);
