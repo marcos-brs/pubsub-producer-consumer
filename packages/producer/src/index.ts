@@ -1,6 +1,6 @@
-import Publisher from 'infra/pubsub/publisher';
-import Producer from 'infra/pubsub/producer';
 import readline from 'readline';
+import Publisher from './infra/pubsub/publisher';
+import Producer from './infra/pubsub/producer';
 
 const publisher = new Publisher();
 const producer = new Producer(publisher);
@@ -14,10 +14,7 @@ rl.on('close', () => {
   console.log('\nMessage sended!!!');
 });
 
-while (true) {
-  rl.question('message? ', (message: string) => {
-    producer.generic('send', message);
-  });
-
+rl.question('message? ', function (message: string) {
+  producer.generic('send', message);
   rl.close();
-}
+});
