@@ -2,8 +2,9 @@
   "name": "@microservice/producer",
   "version": "1.0.0",
   "main": "index.js",
+  "license": "MIT",
   "scripts": {
-    "dev:server": "ts-node-dev --ignore-watch node_modules src/index.ts"
+    "dev:start": "ts-node-dev --ignore-watch node_modules src/index.ts"
   },
   "devDependencies": {
     "ts-node-dev": "^1.0.0-pre.65",
