@@ -4,5 +4,11 @@
   "main": "index.js",
   "author": "Marcos Santana <brmarcossantanabr@gmail.com>",
   "license": "MIT",
-  "private": "true"
+  "private": "true",
+  "workspaces": [
+    "packages/*"
+  ],
+  "devDependencies": {
+    "@microservice/eslint": "1.0.0"
+  }
 }
