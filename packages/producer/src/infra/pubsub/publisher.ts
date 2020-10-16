@@ -1,5 +1,5 @@
 import { Topic } from '@google-cloud/pubsub';
-import IPublisher from 'dtos/IPublisher';
+import IPublisher from '../../dtos/IPublisher';
 import pubSubClient from './client';
 
 class Publisher implements IPublisher {

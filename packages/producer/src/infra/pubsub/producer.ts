@@ -1,4 +1,4 @@
-import IPublisher from 'dtos/IPublisher';
+import IPublisher from '../../dtos/IPublisher';
 
 class Producer {
   constructor(private usersPublisher: IPublisher) {}
