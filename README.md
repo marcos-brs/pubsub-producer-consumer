@@ -8,7 +8,7 @@
 
 > Esse repositório possui duas aplicações: um producer e um consumer. O producer cria um tópico e envia uma mensagem através dele, enquanto o consumer cria um subscriber para esse mesmo tópico e ouve todas essas mensagens.
 
-## Requerimentos
+## Dependências
 
 - [x] NodeJS (para rodar o comando npm)
 - [x] Conta na GCP (para ter um aplicativo)
